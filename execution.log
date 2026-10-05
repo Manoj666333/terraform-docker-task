@@ -1,0 +1,24 @@
+Terraform Docker IaC Execution Log
+
+1. terraform init
+   Result: Terraform initialized successfully.
+
+2. terraform plan
+   Result: Plan showed 2 resources to add, 0 to change, 0 to destroy.
+
+3. terraform apply
+   Result: 2 resources created successfully.
+
+4. terraform state list
+   Result:
+   docker_container.web
+   docker_image.nginx
+
+5. curl http://localhost:8080
+   Result: Nginx HTML page displayed successfully.
+
+6. terraform destroy
+   Result: Infrastructure destroyed successfully.
+
+7. terraform state list
+   Result: No resources listed. Terraform state is empty.
